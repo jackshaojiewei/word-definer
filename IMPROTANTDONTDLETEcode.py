@@ -1,8 +1,3 @@
-
-source myenv/bin/activate
-pip install requests
-
-
 import requests
 
 # Function to get the definition of a word using the Free Dictionary API
