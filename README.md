@@ -1,21 +1,50 @@
-# word-definer
-from PyDictionary import PyDictionary
+# Word Definer
 
-def define_word(word):
-    dictionary = PyDictionary()
-    
-    # Get the meaning of the word
-    meaning = dictionary.meaning(word)
-    
-    if meaning:
-        print(f"Definitions for '{word}':")
-        for part_of_speech, definitions in meaning.items():
-            print(f"{part_of_speech.capitalize()}:")
-            for idx, definition in enumerate(definitions, 1):
-                print(f"  {idx}. {definition}")
-    else:
-        print(f"Sorry, no definitions found for '{word}'.")
+This is a simple Python script that allows users to enter a word and fetch its definition using the Free Dictionary API.
 
-if __name__ == "__main__":
-    word = input("Enter a word to define: ")
-    define_word(word)
+## Features
+- Fetches definitions for any word.
+- Displays part of speech and example usage (if available).
+- Simple and lightweight CLI tool.
+
+## Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/jackshaojiewei/word-definer.git
+   cd word-definer
+   ```
+
+2. Install dependencies:
+   ```sh
+   pip install requests
+   ```
+
+## Usage
+
+Run the script using Python:
+
+```sh
+codethatmayormaynotwork.py
+```
+
+Then enter a word when prompted, and the script will return its definition.
+
+## Example Output
+```
+Enter a word: placeholder
+Word: placeholder
+Part of Speech: placeholder
+Definition: placeholder
+Example: placeholder
+```
+
+## API Used
+This project uses the [Free Dictionary API](https://dictionaryapi.dev/) to fetch word definitions.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributions
+Feel free to fork the repository, open issues, or submit pull requests to enhance the script!
+
