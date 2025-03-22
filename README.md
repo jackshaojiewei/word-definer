@@ -4,8 +4,7 @@ This is a simple Python script that allows users to enter a word and fetch its d
 
 ## Features
 - Fetches definitions for any word.
-- Displays part of speech and example usage (if available).
-- Simple and lightweight CLI tool.
+- Displays part of speech and example usage.
 
 ## Installation
 
@@ -25,18 +24,22 @@ This is a simple Python script that allows users to enter a word and fetch its d
 Run the script using Python:
 
 ```sh
-codethatmayormaynotwork.py
+python codethatmayormaynotwork.py
 ```
 
 Then enter a word when prompted, and the script will return its definition.
 
 ## Example Output
 ```
-Enter a word: placeholder
-Word: placeholder
-Part of Speech: placeholder
-Definition: placeholder
-Example: placeholder
+Enter a word to define (or type 'exit' to quit): word
+
+Definitions for 'word':
+1. (noun) The smallest unit of language that has a particular meaning and can be expressed by itself; the smallest discrete, meaningful unit of language. (contrast morpheme.)
+   Example: No example available.
+2. (verb) To say or write (something) using particular words; to phrase (something).
+   Example: I’m not sure how to word this letter to the council.
+3. (interjection) Truth, indeed, that is the truth! The shortened form of the statement "My word is my bond."
+   Example: "Yo, that movie was epic!" / "Word?" ("You speak the truth?") / "Word." ("I speak the truth.")
 ```
 
 ## API Used
